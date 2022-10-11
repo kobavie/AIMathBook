@@ -3,7 +3,12 @@
 
 import random
 
-with open("./hyakuinin.txt", encoding="utf-8") as f:
-    wakas = [s.strip() for s in f.readlines()]
+def main():
 
-print(wakas[random.randrange(len(wakas))])
+    with open("./hyakuinin.txt", encoding="utf-8") as f:
+        wakas = [s.strip() for s in f.readlines()]
+        print(wakas[random.randrange(len(wakas))])
+
+
+if __name__ == '__main__':
+    main()
